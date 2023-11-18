@@ -12,6 +12,7 @@ public class MatchController {
     public MatchController() {
         this.matches = new HashMap<>();
 
+        // Reading match data
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("match_data.txt");
         processInputStream(is);

@@ -16,6 +16,7 @@ public class PlayerController {
         this.matchController = matchController;
         this.casino = casino;
 
+        // Reading player data
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("player_data.txt");
         processInputStream(is);

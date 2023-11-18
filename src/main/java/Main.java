@@ -14,6 +14,8 @@ public class Main {
         MatchController matchController = new MatchController();
         PlayerController playerController = new PlayerController(matchController, casino);
 
+        // Writing results to result.txt
+
         List<Player> illegitimatePlayers = new ArrayList<>();
         boolean resultHasLegimatePlayers = false;
 
